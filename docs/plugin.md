@@ -55,14 +55,14 @@ Those plugins are built-in plugin:
 
 ### Un-use a built-in plugin
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.unuse(Plugins.Header); // header
 Editor.unuse(Plugins.FontBold); // font-bold
 ```
 ### Use auto-resize plugin
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.use(Plugins.AutoResize, {
   min: 200, // min height
@@ -72,7 +72,7 @@ Editor.use(Plugins.AutoResize, {
 ### Use tab-insert plugin
 By default, Markdown Editor will lose input focus when user type a Tab key. You can use the built-in tab-insert plugin to solve this problem.
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.use(Plugins.TabInsert, {
   /**
@@ -88,7 +88,7 @@ Editor.use(Plugins.TabInsert, {
 `divider` is a special plugin, you can not un-use it, and you also shouldn't use it. If you want to insert a divider into toolbar, just put `divider` into the `plugins` array.
 
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 const plugins = ['header', 'table', 'divider', 'link', 'clear', 'divider', 'font-bold'];
 
@@ -97,7 +97,7 @@ const plugins = ['header', 'table', 'divider', 'link', 'clear', 'divider', 'font
 
 ## Demo
 ```js
-import Editor, { Plugins }  from 'react-markdown-editor-lite';
+import Editor, { Plugins }  from 'react-markdown-editor-lite-underline';
 import MyPlugin from './MyPlugin';
 
 Editor.use(MyPlugin);
@@ -124,7 +124,7 @@ In PluginComponent, you can:
 
 In following, we written a counter, insert an increasing number into the editor with each click. The starting number is read from the options passed in use.
 ```js
-import { PluginComponent } from 'react-markdown-editor-lite';
+import { PluginComponent } from 'react-markdown-editor-lite-underline';
 
 interface CounterState {
   num: number;
@@ -183,7 +183,7 @@ Editor.use(Counter, {
 You can also use function component to write a plugin
 ```js
 import React from 'react';
-import { PluginProps } from 'react-markdown-editor-lite';
+import { PluginProps } from 'react-markdown-editor-lite-underline';
 
 interface CounterState {
   num: number;

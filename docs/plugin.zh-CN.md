@@ -55,14 +55,14 @@
 
 ### 卸载内置插件
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.unuse(Plugins.Header); // header
 Editor.unuse(Plugins.FontBold); // font-bold
 ```
 ### 使用自动调整尺寸插件
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.use(Plugins.AutoResize, {
   min: 200, // 最小高度
@@ -72,7 +72,7 @@ Editor.use(Plugins.AutoResize, {
 ### 使用 tab 输入插件
 在默认情况下，用户在 Markdown 编辑区按下 Tab 键时会失去输入焦点，可以使用内置的 Tab 输入插件来解决这个问题。
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 Editor.use(Plugins.TabInsert, {
   /**
@@ -88,7 +88,7 @@ Editor.use(Plugins.TabInsert, {
 `divider` 是一个特殊的插件，你不能卸载它，但你也不需要手动添加它。如果你想在工具栏上插入一个分隔符，将 `divider` 添加到 `plugins` 数组中即可。
 
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 const plugins = ['header', 'table', 'divider', 'link', 'clear', 'divider', 'font-bold'];
 
@@ -96,7 +96,7 @@ const plugins = ['header', 'table', 'divider', 'link', 'clear', 'divider', 'font
 ```
 ## Demo
 ```js
-import Editor, { Plugins } from 'react-markdown-editor-lite';
+import Editor, { Plugins } from 'react-markdown-editor-lite-underline';
 import MyPlugin from './MyPlugin';
 
 Editor.use(MyPlugin);
@@ -112,13 +112,13 @@ const plugins = ['header', 'table', 'my-plugins', 'link', 'clear', 'logger', 'mo
 ```js
 import dynamic from "next/dynamic";
 import ReactMarkdown from "react-markdown";
-import "react-markdown-editor-lite/lib/index.css";
+import "react-markdown-editor-lite-underline/lib/index.css";
 
 const MdEditor = dynamic(
   () => {
     return new Promise((resolve) => {
       Promise.all([
-        import("react-markdown-editor-lite"),
+        import("react-markdown-editor-lite-underline"),
         import("./plugin")
       ]).then((res) => {
         res[0].default.use(res[1].default);
@@ -144,7 +144,7 @@ const MdEditor = dynamic(
 
 下面，我们编写一个计数器，每次点击均往编辑器中插入一个递增的数字。起始数字从use时传入的选项读取。
 ```js
-import { PluginComponent } from 'react-markdown-editor-lite';
+import { PluginComponent } from 'react-markdown-editor-lite-underline';
 
 interface CounterState {
   num: number;
@@ -202,7 +202,7 @@ Editor.use(Counter, {
 同样可以使用函数组件来编写插件
 ```js
 import React from 'react';
-import { PluginProps } from 'react-markdown-editor-lite';
+import { PluginProps } from 'react-markdown-editor-lite-underline';
 
 interface CounterState {
   num: number;

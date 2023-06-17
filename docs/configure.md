@@ -36,9 +36,9 @@ Please note: what the onChange callback gets is the properties of the current st
 
 ```js
 import React from 'react';
-import MdEditor from 'react-markdown-editor-lite';
+import MdEditor from 'react-markdown-editor-lite-underline';
 // Import styles
-import 'react-markdown-editor-lite/lib/index.css';
+import 'react-markdown-editor-lite-underline/lib/index.css';
 // Two different markdown parser
 import MarkdownIt from 'markdown-it';
 import * as ReactMarkdown from 'react-markdown';

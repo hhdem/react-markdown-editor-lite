@@ -13,7 +13,7 @@ interface Decorated {
 const SIMPLE_DECORATOR: { [x: string]: [string, string] } = {
   bold: ['**', '**'],
   italic: ['*', '*'],
-  underline: ['++', '++'],
+  underline: ['_', '_'],
   strikethrough: ['~~', '~~'],
   quote: ['\n> ', '\n'],
   inlinecode: ['`', '`'],

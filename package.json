@@ -1,6 +1,6 @@
 {
-  "name": "react-markdown-editor-lite",
-  "version": "1.2.5-9",
+  "name": "react-markdown-editor-lite-underline",
+  "version": "1.2.7",
   "description": "a light-weight Markdown editor based on React",
   "main": "./cjs/index.js",
   "module": "./esm/index.js",
@@ -19,12 +19,11 @@
     "build": "build-scripts build",
     "prod": "build-scripts build",
     "test": "mocha",
-    "coverage": "nyc mocha",
-    "precommit": "lint-staged"
+    "coverage": "nyc mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HarryChen0506/react-markdown-editor-lite.git"
+    "url": "git+https://github.com/hhdem/react-markdown-editor-lite.git"
   },
   "keywords": [
     "markdown",

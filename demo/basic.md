@@ -9,7 +9,7 @@ order: 1
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactMarkdown from 'react-markdown';
-import MdEditor, { Plugins } from 'react-markdown-editor-lite';
+import MdEditor, { Plugins } from 'react-markdown-editor-lite-underline';
 
 const PLUGINS = undefined;
 // const PLUGINS = ['header', 'divider', 'image', 'divider', 'font-bold', 'full-screen'];

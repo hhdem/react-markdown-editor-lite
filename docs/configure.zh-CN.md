@@ -33,9 +33,9 @@ renderHTML支持返回HTML文本或ReactElement，例如，markdown-it返回的�
 
 ```js
 import React from 'react';
-import MdEditor from 'react-markdown-editor-lite';
+import MdEditor from 'react-markdown-editor-lite-underline';
 // 导入编辑器的样式
-import 'react-markdown-editor-lite/lib/index.css';
+import 'react-markdown-editor-lite-underline/lib/index.css';
 // 两种不同的解析器
 import MarkdownIt from 'markdown-it';
 import * as ReactMarkdown from 'react-markdown';
